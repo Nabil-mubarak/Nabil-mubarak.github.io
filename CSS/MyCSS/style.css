@@ -1,0 +1,105 @@
+
+
+.jumbotron {
+    padding-top: 200px;
+    background-color: #e2edff;
+}
+
+.jumbotron img {
+    animation: profile 5s;
+}
+
+.jumbotron img:hover {
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.jumbotron h1 {
+    animation: h1 4s;
+}
+
+.projects {
+    background-color: #e2edff;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.contact:hover::after {
+    content: 'form ini belum aktif';
+    font-weight: 200;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: black;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    right: 640px;
+    top: 2400px;
+    cursor: alias;
+}
+
+.contact:hover {
+    cursor: alias;
+}
+
+.card {
+    border: 0;
+    border-radius: 30px;
+    background-color: rgba(173, 173, 173, 0.5);
+    opacity: 1;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:active {
+    box-shadow: none;
+}
+
+.card p {
+    font-size: 12px;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+/* Animasi */
+
+@keyframes profile{
+    0% {
+        margin-top: 200px;
+        opacity: 0.5;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes h1 {
+    0% {
+        margin-top: 200px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+/* @keyframes text {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: 500px;
+    }
+} */
+
