@@ -136,8 +136,8 @@
                         </div>
                         <button type="submit" class="btn btn-primary btn-kirim">Send</button>
 
-                        <button class="btn btn-primary d-none btn-loading" type="button" disabled>
-                            <span class="spinner-grow spinner-grow-sm " role="status" aria-hidden="true"></span>
+                        <button class="btn btn-primary d-none" type="button" disabled>
+                            <span class="spinner-grow spinner-grow-sm btn-loading" role="status" aria-hidden="true"></span>
                             Loading...
                           </button>
                     </form>
@@ -179,7 +179,7 @@
                 form.reset();
                 console.log('Success!', response);
         })
-            .catch(error => console.error('Error!', error.message));
+            .catch(error => console.error('Error!', error.message))
         });
       </script>
 </body>
